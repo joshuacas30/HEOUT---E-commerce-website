@@ -1,0 +1,400 @@
+
+
+*::before*::after{
+    box-sizing: border-box;
+}
+img, picture, svg{
+    display: block;
+    max-width: 100%;
+}
+*{
+  padding: 0;
+  margin: 0;
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+
+nav{
+  display:flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 50px;
+  padding: 0px 20px;
+
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  cursor: pointer;
+}
+.logo span{
+  font-size: 2vw;
+  font-weight: 700;
+}
+.categories{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  
+}
+.menu-right{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  
+  
+  
+}
+.menu-right a{
+  /* background-color: red; */
+  text-decoration: none;
+  color: black;
+
+}
+
+.dropdown:hover>.dropdown-menu {
+display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+    
+}
+.landingPage{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../image_assets/my-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+  
+  padding: 20px 20px;
+  
+  /* outline: 1px solid black; */
+}
+/* .landingPage::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); 
+  z-index: 0; 
+} */
+
+
+.landingPage .landing-page-content{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  text-align: center;
+  /* outline: 1px solid black; */
+ 
+}
+.tag-line span{
+  font-size: 8vw;
+  color: white;
+  line-height: 120px;
+  
+}
+.cta-buttons{
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+   /* Optional: to make sure the section takes full viewport height */
+  flex-direction: row; /* To stack the buttons vertically */
+  gap: 20px; /* Adds space between the buttons */
+  margin-top: 100px; /* Resets margin */
+  padding: 0; /* Resets padding */
+  
+}
+.cta-buttons .btn{
+  border: 1px solid white;
+  color: white !important;
+  margin: 0px;
+}
+.cta-buttons a{
+   width: 100%;
+   height: 0px;
+    display: flex; /* Ensures the anchor tag wraps tightly around the button */
+    justify-content: center; /* Centers the button horizontally within the anchor */
+    align-items: center; /* Centers the button vertically within the anchor */
+    margin: 0; /* Resets margin */
+    padding: 0; /* Resets padding */
+    text-decoration: none; /* Removes underline from links */
+    color: white;
+    border-radius: 30px;
+    
+}
+.cta-buttons a .btn{
+  border-radius: 30px;
+  margin: 0px;
+}
+main  {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  max-width: 100%;
+  height: 400vh;
+ 
+
+}
+.landingPage .hidden .btn{
+  font-size: 18px;
+  width: 160px;
+  height: 50px;
+ 
+}
+
+
+.carousel-inner{
+  width: 600px;
+  height: 600px;
+}
+
+header{
+overflow:hidden;
+white-space: nowrap;
+height: 30px;
+font-size: 14px;
+
+
+}
+
+.discount-slide{
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  animation: 10s slide infinite linear;
+}
+@keyframes slide {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+  
+}
+.cards-wrapper {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 0; 
+}
+.card {
+  margin: 10px;
+  border: 0px;
+  background-color: rgb(242, 242, 243);
+  border-radius: 0px;
+}
+.newArriv{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+section h1{
+  font-size: 50px;
+}
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100px);
+  transition: all 1s;
+}
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+.card-text{
+  color: grey;
+  
+}
+
+
+.dropdown-menu {
+margin-left: auto;
+margin-right: auto;
+overflow: hidden;
+}
+.dropdown-menu-end {
+left: auto;
+right: 0;
+width: 180px;
+}
+
+.bottom-nav ul{
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.bottom-nav ul li{
+  list-style: none;
+  font-size: 20px;
+  color: white;
+}
+
+.main-container{
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  
+  
+}
+main .featured-clothes-wrapper{
+  width: 100%;
+  height: 300vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  place-content: center;  
+  padding-bottom: 100px;
+}
+.fp-title{
+  align-self: center;
+  margin-left: 75px;
+  font-size: 6vw;
+}
+.featured-clothes .description .fc-name{
+  font-size: 6vw;
+  line-height: 60px;
+}
+.featured-clothes{
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  gap: 2rem;
+  
+}
+.featured-clothes .description{
+  padding: 10px;
+}
+.featured-clothes-image{
+ width: 100%;
+ max-height: 80%;
+
+ 
+}
+.featured-clothes-image img{
+  width: 100%;
+  height: 100%;
+ 
+}
+.new-to-collection{
+  width: 100%;
+  height: 150vh;
+  display: flex;
+  flex-direction: column !important;
+  place-items: center;
+  place-content: center;
+
+}
+.new-to-collection .title{
+  font-size: 6vw;
+}
+.even-rows{
+  width: 90%;
+  height:70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center !important;
+  place-items: center;
+  
+  /* outline: 1px solid red; */
+  margin-top: 20px;
+  /* background-color: rgb(234, 234, 241) !important; */
+ 
+  
+}
+.even-rows .container{
+  max-width: 370px;
+  height: 100%;
+
+}
+.even-rows .product-image{
+  width: 100%;
+  height: 90%;
+
+
+}
+.even-rows .product-image img{
+  width: 100%;
+  height: 100%;
+}
+footer{
+  width: 100%;
+  min-height: 200px;
+  border-top: solid 1px black;
+  background-color: black;
+  color: white;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}
+.secondary-header{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+  border-bottom: 1px solid black;
+  color: white;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+.secondary-nav{
+  display: flex;
+ 
+  
+}
+.secondary-nav ul{
+  list-style: none;
+  gap: 2rem;
+ 
+}
+.socials{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  gap: 2rem;
+  margin-top: 20px;
+ 
+}
+.secondary-logo span{
+  font-size: 2vw;
+  font-weight: 700;
+  cursor: pointer;
+}

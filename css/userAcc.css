@@ -1,0 +1,336 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  
+  nav{
+  display:flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 50px;
+  padding: 0px 20px;
+
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  cursor: pointer;
+}
+.logo span{
+  font-size: 2vw;
+  font-weight: 700;
+}
+.categories{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  
+}
+.menu-right{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  
+  
+  
+}
+.menu-right a{
+/* background-color: red; */
+text-decoration: none;
+color: black;
+}
+.dropdown:hover>.dropdown-menu {
+  display: block;
+  
+}
+.dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+      
+}
+header{
+    overflow:hidden;
+    background-color: black;
+    color: white;
+    
+    white-space: nowrap;
+
+    
+    }
+
+    .discount-slide{
+      display: inline-block;
+      padding: 10px;
+      margin: 10px;
+    
+      animation: 10s slide infinite linear;
+    }
+    @keyframes slide {
+      from{
+        transform: translateX(0);
+      }
+      to{
+        transform: translateX(-100%);
+      }
+      
+    }
+    footer{
+        display: grid;
+        place-items: center;
+        padding: 20px;
+        width: 100%;
+        height: 300px;
+      
+        background-color: white;
+        text-decoration: none;
+        font-size: 24px;
+      
+      }
+      footer a{
+        text-decoration: none;
+        color: black;
+      }
+
+ main{
+    display:flex;
+    justify-content: inline-block;
+ }  
+
+ * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .image-container {
+        text-align: center;
+        /* Center the content horizontally */
+        padding: 20px;
+        /* Add padding for spacing */
+        border: 1px solid #ddd;
+        /* Add a border for visual separation */
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    th,
+    td {
+        border: 1px solid #ddd;
+        padding: 20px;
+        /* Adjust the padding value as needed */
+        text-align: left;
+    }
+
+    th {
+        white-space: nowrap;
+        background-color: #f2f2f2;
+    }
+
+    #autoExpandingInput {
+        width: 100px;
+        min-height: 20px;
+        padding: 10px;
+        box-sizing: border-box;
+        overflow-y: hidden;
+        resize: none;
+    }
+
+    .sideBar {
+        padding: 10px;
+    }
+
+    main {
+        margin-top: 30px;
+        margin-left: 20%;
+        margin-right: 50%;
+    }
+
+    tfoot {
+        white-space: nowrap;
+    }
+
+
+
+    * {
+        padding: 0;
+        margin: 0;
+        font-size: small;
+
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+
+    }
+
+    .sidenav a {
+        padding: 5px 5px 5px 32px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 80px;
+        margin-top: 10px;
+    }
+
+    #main {
+        transition: margin-left 0.5s;
+        padding: 16px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+
+
+    .bx-menu {
+        margin-left: -5px;
+        margin-top: none;
+    }
+
+    .styled-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .styled-table th,
+    .styled-table td {
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .styled-table th {
+        background-color: #f2f2f2;
+    }
+
+
+    .categories {
+        font-size: 18px;
+    }
+
+    .categories button {
+        border: 2px solid transparent;
+        /* Initial border style */
+    }
+
+
+    #product-page thead {
+        background-color: black;
+    }
+
+    .styled-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    .styled-table th,
+    .styled-table td {
+        padding: 12px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    .styled-table th {
+        background-color: #f2f2f2;
+    }
+
+    footer {
+        width: 100%;
+        min-height: 200px;
+        border-top: solid 1px black;
+        background-color: black;
+        color: white;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .secondary-header {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        place-items: center;
+        border-bottom: 1px solid black;
+        color: white;
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+
+    .secondary-nav {
+        display: flex;
+
+
+    }
+
+    .secondary-nav ul {
+        list-style: none;
+        gap: 2rem;
+
+    }
+
+    .socials {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        place-items: center;
+        gap: 2rem;
+        margin-top: 20px;
+
+    }
+
+    .secondary-logo span {
+        font-size: 2vw;
+        font-weight: 700;
+        cursor: pointer;
+    }
