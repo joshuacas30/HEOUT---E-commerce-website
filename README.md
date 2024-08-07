@@ -1,7 +1,7 @@
 ﻿# HEOUT---E-commerce-website
-Made with the following:
-HTML
-CSS
-JAVASCRIPT
-PHP
+Made with: 
+HTML, 
+CSS, 
+JAVASCRIPT, 
+PHP, 
 XAMPP SERVER
